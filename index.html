@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe Profissional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #ffff00;
+            color: #0e0d0d;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #131212;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .integrante-card {
+            display: flex;
+            align-items: center;
+            background: #f3efef;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(179, 6, 6, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .integrante-card img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+        }
+        .integrante-info {
+            flex: 1;
+        }
+        .integrante-info h2 {
+            margin-top: 0;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        footer {
+            background-color: #FFFF00;
+            color: #0e0d0d;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .imagem-redonda {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 2px solid #ddd; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Início</a></li>
+                <li><a href="#integrante1" onclick="showSection('integrante1')">Eduarda</a></li>
+                <li><a href="#integrante2" onclick="showSection('integrante2')">Carlos</a></li>
+                <li><a href="#integrante3" onclick="showSection('integrante3')">Iago</a></li>
+                <li><a href="#integrante4" onclick="showSection('integrante4')">Wellington </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <img src="directprime.jpeg" alt="Direct Prime" class="imagem-redonda">
+            <h1>Bem-vindos à Nossa Equipe!</h1>
+            <p>Somos estudantes do Senai em Araxá, resolvemos criar nosso grupo e fazer os projetos juntos, nesse site cotem informações sobre cada um de nós. </p>
+            <p>Conheça os membros da nossa equipe e descubra mais sobre cada um deles. Cada integrante possui uma biografia detalhada, uma foto e informações de contato.</p>
+            <p>Nós sigam no instagram do projeto para ficar por dentro de tudo. @direct.prime</p>
+        </section>
+
+        <section id="integrante1" class="section">
+            <div class="integrante-card">
+                <img src="dudaft.jpeg" alt="Foto do Integrante 1">
+                <div class="integrante-info">
+                    <h2>Integrante 1</h2>
+                    <p>Meu nome é Eduarda Silva de Oliveira, nasci no dia 11/09/2006<br> Estou acabando o ensino médio na escola Dom José Gaspar, atualmente faço curso de tecnologia no Senai no turno da tarde, estou aprendendo muito nessa área e prentendo continuar trabalhando nela, de preferencia em empresas e indústrias aqui em Araxá.<br>
+                        Algumas de minhas habilidades são: boa comunicação, trabalho em equipe, critividade, também sou bastente esforçada e me dedico com o grupo ou atividades passadas.<br>
+                        Pretendo ter minha própria empresa tecnologia onde eu possa vender meus serviços para ajudar outras empresas e clientes mesmo!</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> edudaoliveira11@gamil.com</p>
+                        <p><strong>Telefone:</strong> (34) 8859-6669</p>
+                        <p><strong>Instagram:</strong> @dudazw9</p>
+                        <p><strong>Endereço:</strong> Rua Leodora Machado, 185, Araxá, Minas Gerais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="integrante2" class="section">
+            <div class="integrante-card">
+                <img src="carlos.jpeg" alt="Foto do Integrante 2">
+                <div class="integrante-info">
+                    <h2>Integrante 2</h2>
+                    <p>Meu nome é Carlos Eduardo da Silva Martins, nasci dia 4 de dezembro no ano de 2007 <br>Atualmente estou cursando o ensino médio na escola Dom josé Gaspar e cursando Tecnologia da informação na instituição Senai <br>
+                        Algumas das minhas habilidades: esforçado, prestativo, criativo. <br> No futuro pretendo ter um programa que gere beneficios para a sociedade.
+                    </p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> kdu000412@gmail.com</p>
+                        <p><strong>Telefone:</strong> (34) 98434-3201</p>
+                        <p><strong>Instagram:</strong> @itz_kdu</p>
+                        <p><strong>Endereço:</strong> Rua Marina do Vale Costa, 100, Araxá, Minas Gerais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="integrante3" class="section">
+            <div class="integrante-card">
+                <img src="iagoft.jpeg" alt="Foto do Integrante 3">
+                <div class="integrante-info">
+                    <h2>Integrante 3</h2>
+                    <p>Meu nome é Iago Nader de Carvalho Saraiva, tenho 17 anos. <br>
+                    Estudo na Escola Dom José Gaspár de noite, e estou terminando o 3°ano do ensino medio, <br>
+                    atulamente estou cursando TI no Senai. <br>
+                    Algumas das minhas  habilidades são: bom ouvinte, trabalho em equipe, critividade, sou esforçado e me dedico as atividades.</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> iagosaraiva396@gmail.com</p>
+                        <p><strong>Telefone:</strong> (34) 99715-0281</p>
+                        <p><strong>Instagram:</strong> @_saraiva_34</p>
+                        <p><strong>Endereço:</strong> Rua Maria josé de Andrade, 125, Araxá, Minas Gerais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="integrante4" class="section">
+            <div class="integrante-card">
+                <img src="integrante4.png" alt="Foto do Integrante 4">
+                <div class="integrante-info">
+                    <h2>Integrante 4</h2>
+                    <p>
+                        Meu nome é Wellington Carlos Guimararães Júnior, tenho 18 anos e moro em Araxá-MG. <br>
+                        Trabalho como programador freelancer e divulgo conteúdo educativo e informativo sobre programação na internet. Infelizmente, até o atual momento
+                        tive participação em apenas dois projetos, sendo um deles um website para divulgação de vagas de emprego em Araxá e o serviço de entregas da
+                        Direct Prime. Possuo um site pessoal, que está localizado no link <a href="https://orangethewell.neocities.org/">orangethewell.neocities.org</a> e 
+                        também possuo alguns outros projetos no <a href="https://github.com/orangethewell">Github</a>.
+                    </p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> orangethewell@gmail.com</p>
+                        <p><strong>Telefone:</strong> (34) 98868-8130</p>
+                        <p><strong>Instagram:</strong> @orangethewell</p>
+                        <p><strong>Endereço:</strong> Avenida Antônio Afonso Vale, 350, Araxá, Minas Gerais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Equipe Direct Prime</p>
+    </footer>
+
+    <script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('main .section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            const activeSection = document.getElementById(id);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
